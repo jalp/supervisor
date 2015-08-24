@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-/opt/Prana/bin/Prana -c /etc/prana/prana.properties
+/opt/Prana/bin/Prana -c /etc/prana/prana.properties &
+sleep 60
 echo 'Launching application...'
-sudo supervisorctl start app
+supervisorctl start app
